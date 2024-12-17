@@ -23,7 +23,7 @@ Este backend servirá como fuente de datos para el proyecto frontend desarrollad
 ### **1. Clonar el repositorio**
 ```bash```
 git clone https://github.com/GonzaloBelvisi/InfoCasas.git
-cd task-manager-api
+luego dirigirse a: ```cd task-manager-api```
 
 ### Configurar el entorno
 
