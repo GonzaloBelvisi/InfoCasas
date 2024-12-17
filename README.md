@@ -52,8 +52,8 @@ php artisan key:generate
 
 ### Configurar la base de datos
 
-Ejecutar las migraciones: php artisan migrate
-Cargar datos iniciales usando el seeder: php artisan db:seed --class=TaskSeeder
+1. Ejecutar las migraciones: php artisan migrate
+2. Cargar datos iniciales usando el seeder: php artisan db:seed --class=TaskSeeder
 
 
 ### Iniciar el servidor
