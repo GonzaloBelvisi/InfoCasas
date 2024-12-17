@@ -37,7 +37,7 @@ DB_PASSWORD=secret
 ```
 
 ### Levantar los contenedores con Docker
-docker-compose up --build -d
+``` docker-compose up --build -d ```
 
 1. Laravel (API backend): Disponible en http://127.0.0.1:8000
 2. MySQL (Base de datos): Disponible en db:3306
@@ -46,19 +46,22 @@ docker-compose up --build -d
 
 ### Instalar dependencias
 
+```
 docker-compose exec app bash
 composer install
 php artisan key:generate
+```
 
 
 ### Configurar la base de datos
 
-1. Ejecutar las migraciones: php artisan migrate
-2. Cargar datos iniciales usando el seeder: php artisan db:seed --class=TaskSeeder
+1. Ejecutar las migraciones: ``` php artisan migrate``` 
+2. Cargar datos iniciales usando el seeder: ``` php artisan db:seed --class=TaskSeeder ```
 
 
 ### Iniciar el servidor
-php -S 0.0.0.0:8000 -t public (La API estará disponible en http://127.0.0.1:8000.)
+``` php -S 0.0.0.0:8000 -t public ```
+(La API estará disponible en http://127.0.0.1:8000.)
 
 
 ## **Uso de la API**
