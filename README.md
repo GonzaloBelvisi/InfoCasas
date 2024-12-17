@@ -252,7 +252,7 @@ Con estos endpoints puedes realizar todas las operaciones necesarias sobre las t
 
 
 
-## **React**
+## **React  18**
 Para Iniciar React correctamente es necesario iniciarlo con la version React 18:
 - npx create-react-app task-manager-frontend --use-npm
 - cd task-manager-frontend
