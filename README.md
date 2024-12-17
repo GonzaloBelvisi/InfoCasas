@@ -27,13 +27,14 @@ cd task-manager-api
 
 ### Configurar el entorno
 
+```
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
 DB_DATABASE=task_manager
 DB_USERNAME=user
 DB_PASSWORD=secret
-
+```
 
 ### Levantar los contenedores con Docker
 docker-compose up --build -d
