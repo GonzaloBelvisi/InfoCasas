@@ -21,11 +21,11 @@ Este backend servirá como fuente de datos para el proyecto frontend desarrollad
 ## **Configuración del proyecto**
 
 ### **1. Clonar el repositorio**
-```bash
+```bash```
 git clone https://github.com/GonzaloBelvisi/InfoCasas.git
 cd task-manager-api
 
-###Configurar el entorno
+### Configurar el entorno
 
 DB_CONNECTION=mysql
 DB_HOST=db
@@ -35,7 +35,7 @@ DB_USERNAME=user
 DB_PASSWORD=secret
 
 
-###Levantar los contenedores con Docker
+### Levantar los contenedores con Docker
 docker-compose up --build -d
 
 1. Laravel (API backend): Disponible en http://127.0.0.1:8000
@@ -43,20 +43,20 @@ docker-compose up --build -d
 3. phpMyAdmin: Disponible en http://127.0.0.1:8080
 
 
-###Instalar dependencias
+### Instalar dependencias
 
 docker-compose exec app bash
 composer install
 php artisan key:generate
 
 
-###Configurar la base de datos
+### Configurar la base de datos
 
 Ejecutar las migraciones: php artisan migrate
 Cargar datos iniciales usando el seeder: php artisan db:seed --class=TaskSeeder
 
 
-###Iniciar el servidor
+### Iniciar el servidor
 php -S 0.0.0.0:8000 -t public (La API estará disponible en http://127.0.0.1:8000.)
 
 
@@ -245,4 +245,13 @@ Con estos endpoints puedes realizar todas las operaciones necesarias sobre las t
 - **Buscar** tareas por nombre.
 - **Actualizar** una tarea existente.
 - **Eliminar** una tarea por su ID.
+
+
+
+## **React**
+Para Iniciar React correctamente es necesario iniciarlo con la version React 18:
+- npx create-react-app task-manager-frontend --use-npm
+- cd task-manager-frontend
+- npm install react@18 react-dom@18 --legacy-peer-deps
+- npm start
 
